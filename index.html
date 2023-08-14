@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="assets/img/random-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header: Start -->
+    <header class="container mx-auto my-5 lg:my-12">
+        <h1
+            class="font-extrabold text-transparent bg-clip-text text-2xl md:text-3xl lg:text-4xl text-center bg-gradient-to-r from-cyan-500 to-blue-500">
+            Random Quote Generator</h1>
+    </header>
+    <!-- Header: End -->
+
+    <!-- Main: Start -->
+    <main class="container mx-auto">
+        <!-- Random Quote Section -->
+        <section class="flex justify-center items-center">
+            <div class="shadow-lg p-5 lg:p-10 w-full lg:w-1/2 m-5 rounded space-y-3">
+                <p id="quote" class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut,
+                    provident.</p>
+                <h3 id="author" class="text-gray-500 font-medium">- <span class="text-red-400">Unknown</span></h3>
+                <div class="flex justify-end">
+                    <button id="new-quote-btn" class="btn btn-info">New Quote</button>
+                </div>
+            </div>
+        </section>
+        <!-- Random Quote Section -->
+    </main>
+    <!-- Main: End -->
+
+    <!-- Footer: Start -->
+    <footer class="mx-auto p-5 md:p-10 mt-5 lg:mt-16">
+        <hr class="mb-5 lg:mx-10">
+        <div class="max-w-screen-xl mx-auto">
+            <p class="text-center">&copy; RandomQuote 2023. All right reserved.</p>
+            <p class="text-center text-gray-400 font-medium">[<a href="https://github.com/rocktohq/digital-tasbih"><span
+                        class="text-cyan-500">&#8944; Github</span>: <span class="text-red-500">Source Code
+                        &#8945;</span></a>]</p>
+        </div>
+    </footer>
+    <!-- Footer: End -->
+
+    <!-- Scripts: Start -->
+    <script src="assets/js/quote.js"></script>
+    <!-- Scripts: End -->
+</body>
+
+</html>
